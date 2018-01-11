@@ -6,14 +6,10 @@
 
 import pandas as pd
 import numpy as np
-get_ipython().magic('matplotlib inline')
-import matplotlib
-import matplotlib.pyplot as plt
 # import pyflux as pf
 import tensorflow as tf
 import os
 
-matplotlib.rcParams['figure.figsize'] = (16.0, 8.0)
 
 
 # In[3]:
@@ -37,8 +33,6 @@ samples = samp['AVG_PRICE'].astype(np.float32).values.reshape(length,1)
 print(samples)
 min_max_scaler = preprocessing.MinMaxScaler()
 samples = min_max_scaler.fit_transform(samples)
-plt.plot(index,samples.reshape(length,1),'-o')
-plt.show()
 
 
 # <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
@@ -140,11 +134,8 @@ LOGDIR = 'tensorboardlog/'
 with tf.Session() as sess:
 
     #interactive mode
-    plt.ion()
     #initialize the figure
-    plt.figure()
     #show the graph
-    plt.show()
 
     hparam = make_hparam_string(learning_rate,H)
     summ = tf.summary.merge_all()
@@ -200,8 +191,6 @@ with tf.Session() as sess:
             print("Step",epoch_idx, "Loss", _total_loss)
             #save checkpoints
             saver.save(sess, os.path.join(LOGDIR, "model.ckpt"), i)
-plt.plot(loss_list)
-plt.show()
 
 
 # In[14]:
@@ -217,9 +206,6 @@ y_output.shape
 # In[15]:
 
 
-plt.plot(x[0,1:],'black')
-plt.plot(y_output,'red')
-plt.show()
 
 
 # In[16]:
