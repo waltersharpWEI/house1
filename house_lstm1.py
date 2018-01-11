@@ -30,7 +30,8 @@ from sklearn import preprocessing
 length = samp.shape[0]
 index = samp.DATA_DATE_RM.values
 samples = samp['AVG_PRICE'].astype(np.float32).values.reshape(length,1)
-print(samples)
+#print(samples)
+print "Data processed..."
 min_max_scaler = preprocessing.MinMaxScaler()
 samples = min_max_scaler.fit_transform(samples)
 
