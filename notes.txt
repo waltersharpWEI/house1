@@ -6,3 +6,6 @@ the Preprocessing
 1.RNN doens't converge as it was
 It seems not the problem of the version
 could be a tensorflow or python(2,3) problem
+
+2 When switched to python2
+it works normally then
