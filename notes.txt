@@ -16,3 +16,6 @@ Next steps:
 3. data handle
 4. handle of different area
 5. new target (a upward or downward trend, how severe the trend is)
+
+
+Try GRU
