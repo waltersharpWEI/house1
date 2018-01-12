@@ -9,3 +9,10 @@ could be a tensorflow or python(2,3) problem
 
 2 When switched to python2
 it works normally then
+
+Next steps:
+1. croos_entorpy or other loss function
+2. stacked deep lstm
+3. data handle
+4. handle of different area
+5. new target (a upward or downward trend, how severe the trend is)
