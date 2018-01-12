@@ -1,0 +1,8 @@
+rnn has problem
+the result is very different from the start
+it could be a problem on MinMaxScalar and Reshape during 
+the Preprocessing
+
+1.RNN doens't converge as it was
+It seems not the problem of the version
+could be a tensorflow or python(2,3) problem

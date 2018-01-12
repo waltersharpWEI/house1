@@ -6,7 +6,7 @@
 
 import pandas as pd
 import numpy as np
-get_ipython().magic('matplotlib inline')
+#get_ipython().magic('matplotlib inline')
 import matplotlib
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
